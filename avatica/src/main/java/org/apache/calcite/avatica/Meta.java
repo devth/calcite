@@ -315,7 +315,7 @@ public interface Meta {
     public final List<ColumnMetaData> columns;
     public final String sql;
     public final List<AvaticaParameter> parameters;
-    public final Map<String, Object> internalParameters;
+    public final transient Map<String, Object> internalParameters;
     public final CursorFactory cursorFactory;
 
     @JsonCreator
